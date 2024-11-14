@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Photo Gallery</h1>
+  </header>
+
+  <!-- Back Button -->
+  <div class="back-button">
+    <button onclick="window.history.back();">← Back</button>
+  </div>
+
+  <section class="gallery">
+    <img src="IMG/IMG_0001.jpg" alt="Photo 1" data-lightbox="gallery">
+    <img src="IMG/IMG_0002.jpg" alt="Photo 2" data-lightbox="gallery">
+    <img src="IMG/IMG_0003.jpg" alt="Photo 3" data-lightbox="gallery">
+    <!-- Add more images as needed -->
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
